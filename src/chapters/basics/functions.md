@@ -900,7 +900,7 @@ if n = 0 then acc ...
 
 Finally, we change the recursive case:
 ```ocaml
-else fact (n - 1) (n * acc)
+else fact_aux (n - 1) (n * acc)
 ```
 
 Putting it all together, we have:
